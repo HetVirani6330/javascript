@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr_num = [];
+        let arr1 = prompt("Enter")
+        let arr2_value = arr1.split(",")
+        for (let i = 0; i < arr2_value.length; i++) {
+            let numeric_valie = parseInt(arr2_value[i])
+            arr_num.push(numeric_valie)
+        }
+
+        document.writeln("<br>array is : " + arr_num)
+    </script>
+
+</body>
+
+</html>

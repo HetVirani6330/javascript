@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change password</title>
+</head>
+<body>
+    <form method="post" action="" name="frm" onsubmit="return password()">
+        <label for="">old password :</label>
+        <input type="password" name="oldpwd" id="oldpwd"> <br><br>
+        <label for="">new password :</label>
+        <input type="password" name="newpwd" id="newpwd"> <br><br>
+        <label for="">conform password :</label>
+        <input type="password" name="cnpwd" id="cnpwd"> <br><br>
+        <input type="submit" value="change password">
+    </form>
+
+    <script>
+        function password(){
+            let a = document.getElementById('oldpwd').value;
+            let b = document.frm.newpwd.value;
+            let c = document.getElementById('cnpwd').value;
+            if(a==b){
+                document.write('old pass & new pass does not same');
+                return false;
+            }
+            if(b!=c){
+                document.write('new pass & confirm pass must be same');
+                return false;
+            }
+
+        }
+    </script>
+</body>
+</html>

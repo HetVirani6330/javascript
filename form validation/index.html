@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Registration from</h3>
+    <form action="login.html" method="post" name="regfrm">
+
+        <label for="">Name</label>
+        <input type="text" name="name" id="" placeholder="Enter your name">
+        <p id="errname" class="error"></p>
+        <br>
+
+        <label for="">Gender</label>
+        <input type="radio" name="g1" id="" value="male">Male
+        <input type="radio" name="g1" id="" value="male">female
+        <br><br><br>
+
+        <label for="">Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+        <p id="erremail" class="error"></p>
+        <br>
+
+        <label for="">Password</label>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter your Password">
+        <br><br><br>
+
+        <label for="">Number</label>
+        <input type="number" name="no" id="no" placeholder="Enter your number">
+        <p id="errno" class="error"></p>
+        <br>
+
+        <input type="submit" name="btn1" value="submit">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+            integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $("form[name = 'regfrm']").validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 10
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+
+                    no: {
+                        required: true,
+                        number: true
+                    }
+                },
+                messages: {
+                    pwd: {
+                        required: "please enter storng password"
+                    }
+                }
+            });
+        </script>
+
+    </form>
+</body>
+
+</html> 

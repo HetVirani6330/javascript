@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digit</title>
+</head>
+<body>
+    <script>
+    let ch=prompt('Enter character');
+    
+
+    if (ch >= '0' && ch <= '9')
+    {
+        document.write(""+ch);
+        document.write("  is digit");
+    }
+    else if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')
+    {
+        document.write(""+ch);
+        document.write(" is alphabet");
+    }
+    else
+    {
+        document.write(""+ch);
+        document.write(" is special character");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+
+<body>
+    <script>
+                                            // PATTERN
+        document.write("<br> <b>PATTENS</b>")
+        
+        document.write("<pre>           **    **       *  *  *  *  *  *  *              </pre>");
+        document.write("<pre>         **    **                                          </pre>");
+        document.write("<pre>       **    **        *  *  *  *  *  *  *  *              </pre>");
+        document.write("<pre>     **    **          *     *              *              </pre>");
+        document.write("<pre>   **    **            *     *     *  *  *  *              </pre>");
+        document.write("<pre>     **    **          *     *     *     *  *              </pre>");
+        document.write("<pre>       **    **        *  *  *  *  *  *  *  *              </pre>");
+        document.write("<pre>         **    **                                          </pre>");
+        document.write("<pre>           **    **                                        </pre>");
+
+
+
+        document.write("<hr>")
+
+        // //  SWAPPING
+        document.write("<br><br> <b>SWAPPING</b>")
+
+        let a =parseInt(prompt(" enter a"));
+        let b =parseInt(prompt(" enter b"));
+        let t;
+        document.write("<br><br> Before Swaping A is " + a);
+        document.write("<br> Before Swaping B is " + b);
+
+        t = a;
+        a = b;
+        b = t;
+        
+        document.write("<br> After Swaping A is " + a);
+        document.write("<br> After Swaping B is " + b);
+
+        document.write("<hr>")
+
+        // Emplyoment Salary
+        document.write("<br><br> <b>EMPLOY SALLARY</b>")
+
+        let salary =parseInt(prompt("Enter Your Salary"));
+
+         hra=salary*5/100;
+         da=salary*8/100;
+         ta=salary*6/100;
+        let  gross_salary=(salary+hra+da+ta);
+
+        
+
+        document.write("<pre><b>Sallary      HRA       DA         TA     G_SALLARY</b></pre>");
+        document.write(`${salary}   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ${hra}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         ${da}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            ${ta}     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        ${gross_salary}`);
+
+
+        document.write("<hr>")
+
+
+        // Temprature to Degree
+        document.write("<br><br> <b>TEMPERATURE TO DEGREE</b>")
+
+        let Tempr =parseInt(prompt("Enter Your Tamperature"));
+        document.write("<br><br> Tamperature  is "+Tempr);
+        deg=(Tempr*9/5)+32;
+        document.write("<br> Degree is "+deg);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>1. var data = [10,20,30,40,50,60,70]; <br>
+        WAP to Add all record in array using dynamic and print all records.</h3>
+    <script>
+        var data = [10, 20, 30, 40, 50, 60, 70];
+
+        function Array(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                document.write("<br>Record " + (i + 1) + ": " + arr[i]);
+            }
+        }
+
+        Array(data);
+
+    </script>
+    <hr>
+
+    <h3>2. Var data=[10,20,30,40,50,60] <br>
+        WAP to print all record using forEach loop.</h3>
+    <script>
+        var data = [10, 20, 30, 40, 50, 60];
+
+
+        data.forEach(function (record, index) {
+            document.write("<br>Record " + (index + 1) + ": " + record);
+        });
+    </script>
+    <hr>
+
+    <h3> 3. Convert Above program Array to string. <br>
+        WAP to find that function and implements in program.</h3>
+    <script>
+        let b = ["graps", "watermelon", "stobary", "cherry"];
+        document.write('<br>shorted array is ' + b.toString());
+
+    </script>
+    <hr>
+
+    <h3>
+        4. WAP to IndexOf function, Shift and unshift function
+
+    </h3>
+    <script>
+        let c = [12, 28, 34, 45, 53];
+        document.write('<br> <b>Array is </b>' + c);
+
+        document.write('<br><br> this is indexof ' + c.indexOf(34));
+
+        document.write(" <BR><BR><B>AFTER 1 DELETE</B>")
+        c.shift();
+        for (let i = 0; i < c.length; i++) {
+            document.write('<br><br> this is array ' + c[i]);
+        }
+
+        document.write(" <BR><BR><B>AFTER 1 ADD</B>")
+
+        c.unshift(35000);
+        for (let i = 0; i < c.length; i++) {
+            document.write('<br><br> this is array ' + c[i]);
+        }
+    </script>
+    <hr>
+
+
+    <h3>
+        5.WAP to print all above record in descending order using function.
+    </h3>
+
+    <script>
+        let arr = [43, 45, 32, 12, 3, 55]
+        document.write("Array is : " +arr);
+
+        document.write('<br>Descending order : ' + arr.sort(function (a, b) {
+            return b - a;
+        }));
+
+    </script>
+</body>
+
+</html>

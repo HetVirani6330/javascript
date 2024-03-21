@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Registration from</h3>
+    <form action="login.html" method="post" name="regfrm" onsubmit="return checkform()">
+
+        <label for="">Name</label>
+        <input type="text" name="name" id="" placeholder="Enter your name">
+        <p id="errname" class="error"></p>
+        <br>
+
+        <label for="">Gender</label>
+        <input type="radio" name="g1" id="" value="male">Male
+        <input type="radio" name="g1" id="" value="male">female
+        <br><br><br>
+
+        <label for="">Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+        <p id="erremail" class="error"></p>
+        <br>
+
+        <label for="">Password</label>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter your Password">
+        <br><br><br>
+
+        <label for="">Number</label>
+        <input type="number" name="no" id="no" placeholder="Enter your number">
+        <p id="errno" class="error"></p>
+        <br>
+
+        <input type="submit" name="btn1" value="Save">
+
+    </form>
+
+    <script>
+        function checkform() {
+            let name = document.regfrm.name.value;
+            let no = document.regfrm.no.value;
+            let email = document.regfrm.email.value;
+            let status = 0;
+
+            if (name == "") {
+                document.getElementById("errname").innerHTML = "Please enter name";
+                status = 1;
+            }
+
+            if (no == "") {
+                document.getElementById("errno").innerHTML = "Please enter number";
+                status = 1;
+            }
+
+            if (name.length < 2 || name. length > 10) {
+                document.getElementById("errname").innerHTML = "Name must be >2 or <10 character";
+                status = 1;
+            }
+
+            if (no.length < 1 || no.length > 10) {
+                document.getElementById("errno").innerHTML = "Name must be >1 or <10 character";
+                status = 1;
+            }
+
+            var validregex = /^[a-zA-Z0-9.!#$%& '+/=?^_'{|}-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+            console.log(email.match(validregex));
+            if (!email.match(validregex)) {
+                document.getElementById("erremail").innerHTML = "Please enter a valid email";
+                status = 1;
+            }
+
+            if (status == 1) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

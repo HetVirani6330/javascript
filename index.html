@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" align=" center" cellspacing="0" cellpadding="8">
+        <tr>
+            <th>rollNo</th>
+            <th>Name</th>
+            <th>surname</th>
+            <th>Age</th>
+            <th>Salery</th>
+        </tr>
+        <tbody id="tdata">
+
+        </tbody>
+    </table>
+    <script>
+        let user = [
+            {
+                id: 1,
+                name: "het",
+                sname:"virani",
+                age: 17,
+                salary: 50000,
+            },
+            {
+                id: 2,
+                name: "jigar",
+                sname:"patel",
+                age: 20,
+                salary: 40000,  
+            },
+            
+            
+        ]   
+        let het = ''
+        // user.forEach((i) => {
+        //     het += "<tr>"
+        //     het += "<td>" +i.id+ "</td>"
+        //     het += "<td>" +i.name+ "</td>"
+        //     het += "<td>" +i.sname+ "</td>"
+        //     het += "<td>" +i.age+ "</td>"
+        //     het += "<td>" +i.salary+ "</td>"
+        //     het += "</tr>"
+        // })
+
+        user.forEach((i) => {
+            het += `
+                <tr>
+                    <td>${i.id}</td>
+                    <td>${i.name}</td>
+                    <td>${i.sname}</td>
+                    <td>${i.age}</td>
+                    <td>${i.salary}</td>
+                </tr>
+            `
+        })
+        
+
+        document.getElementById("tdata").innerHTML = het;
+
+    </script>
+</body>
+
+</html>

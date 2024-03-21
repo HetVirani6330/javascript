@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    background-color: rgb(7, 7, 7);
+    background-image: url(./1338126.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.635);
+    
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timer>div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:4px solid rgb(145, 223, 216);
+}
+
+.timer p {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    color:rgb(145, 223, 216);
+
+}
+
+/* .timer span {
+    font-size: 40px;
+    font-weight: normal;
+    color:rgb(145, 223, 216);
+    font-family: sans-serif;
+} */

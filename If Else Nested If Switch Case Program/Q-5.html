@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let unit=parseInt(prompt('Enter a unit'))
+        let bill=parseFloat
+        let charge=parseFloat
+        
+        
+        if (unit <= 50) {
+            bill = unit * 0.5;
+        }
+
+
+        else if (unit >= 51 && unit <= 150) {
+            bill = 25 + (unit - 50) * 0.75;
+        }
+        else if (unit >= 151 && unit <= 250) {
+            bill = 100 + (unit - 150) * 1.2;
+        }
+        else {
+            bill = 220 + (unit - 250) * 1.5;
+        }
+        document.write(" bil", bill);
+
+        charge = bill * 20 / 100;
+        document.write("<br> Charge", charge);
+
+        bill += charge;
+        document.write("<br> flinal bill ", bill);
+    </script>
+</body>
+
+</html>

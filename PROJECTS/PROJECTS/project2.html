@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 2(TWO)</title>
+</head>
+
+<body>
+    <script>
+
+        // Question One
+        document.write("<h3>1. alphabet, digit or special character.</h3>")
+        let ch = (prompt("Enter Alphabet, Digit OR spical_Character"));
+
+        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+            document.write(ch + " is <b>Alphabet.</b>");
+        }
+        else if (ch >= '0' && ch <= '9') { 
+            document.write(ch + " is <b>Digit.</b>");
+        }
+        else {
+            document.write(ch + " is <b>Special character.</b>");
+        }
+
+
+
+
+        document.write("<hr>");
+
+        document.write("<h3>2. Even & odd</h3>");
+
+        // Question Two
+
+        let no = (prompt("Enter Even & Odd  number"));
+
+        (no % 2 == 0) ? document.write(no + " Number  is <b>even</b>") : document.write(no + " Number is <b>odd</b>");
+
+
+
+
+        // Question Three
+
+        document.write("<hr>");
+
+        document.write("<h3>3.  max from 4 numbers.</h3>");
+        let a = parseInt(prompt("Enter A"));
+        let b = parseInt(prompt("Enter B"));
+        let c = parseInt(prompt("Enter C"));
+        let d = parseInt(prompt("Enter D"));
+
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    document.write(" a is maximum");
+                } else {
+                    document.write(" d is maximum");
+                }
+
+            } else {
+                document.write(" c is maximum");
+            }
+
+        } else {
+            if (b > c) {
+                if (b > d) {
+                    document.write(" b is maximum");
+                } else {
+                    document.write(" d is maximum");
+                }
+
+            } else {
+                if (c > d) {
+                    document.write(" c is maximum");
+                } else {
+                    document.write(" d is maximum");
+                }
+
+
+            }
+
+        }
+
+
+        // Question Four
+
+        document.write("<hr>");
+
+        document.write("<h3>4.  Days.</h3>");
+
+        let da = (prompt("Enter any day first letter"));
+
+        switch (da) {
+            case 'm':
+                document.write("\n MONDAY ");
+                break;
+            case 't':
+                document.write("\n TUESDAY ");
+                break;
+            case 'w':
+                document.write("\n WEDNESDAY");
+                break;
+            case 'T':
+                document.write("\n THURSDAY ");
+                break;
+            case 'f':
+                document.write("\n FRIDAY ");
+                break;
+            case 's':
+                document.write("\n SATURDAY ");
+                break;
+            case 'S':
+                document.write("\n SUNDAY");
+                break;
+            default:
+                document.write("Invalid chooice");
+                break;
+        }
+
+
+
+
+        // Question Five
+
+        document.write("<hr>");
+
+        document.write("<h3>5.  Electricity bill.</h3>");
+        let units = (prompt("Enter your unit"));
+
+        if (units <= 50) {
+            total = units * 0.50;
+        }
+        else if (units <= 150) {
+            total = 50 * 0.50 + (units - 50) * 0.75;
+        }
+        else if (units <= 250) {
+            total = 50 * 0.50 + 100 * 0.75 + (units - 150) * 1.20;
+        }
+        else {
+            total = (50 * 0.50) + (100 * 0.75) + (100 * 1.20) + (units - 250) * 1.50;
+        }
+
+        // Add a 20% surcharge
+        total = total + (0.20 * total);
+
+
+
+
+        document.write("Total electricity bill: Rs." + total);
+
+
+
+
+        // Question Six
+
+        document.write("<hr>");
+
+        document.write("<h3> 6.  Number is Positive || Negetive || Zero </h3>");
+        let pos_neg = (prompt("Enter Positive Negitive & Zero number"));
+
+        if (pos_neg > 0) {
+            document.write("Number is Positive");
+        } else if (pos_neg < 0) {
+            document.write("Number is Negetive");
+        } else {
+            document.write("Number is Zero");
+        }
+
+
+        // Question Seven
+
+        document.write("<hr>");
+
+        document.write("<h3> 7.  Number is Same || Greter || Less </h3>");
+        let number1 = (prompt("Enter number1"));
+        let number2 = (prompt("Enter number2"));
+
+
+        if (number1 > number2) {
+            document.write("Number1 is Greter");
+        } else if (number1 < number2) {
+            document.write("Number1 is Less");
+        } else {
+            document.write("Number is Equal");
+        }
+
+
+        // Question eight
+         document.write("<hr>");
+
+        document.write("<h3> 8.  Employ Salary</h3>");
+        let salary = parseInt(prompt("Enter Your Salary"))
+
+        if (salary > 1000 && salary <= 5000) {
+           sum= salary + 1000;
+
+        }
+        else if (salary > 5000 && salary <= 10000) {
+            sum=salary + 2000;
+
+        }
+        else if (salary > 10000 && salary <= 20000) {
+           sum= salary + 3000;
+
+        }
+        else {
+            sum=salary + 4000;
+
+        }
+
+        document.write("Your Salary is : " , sum);
+    </script>
+</body>
+
+</html>

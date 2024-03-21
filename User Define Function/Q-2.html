@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const pi=3.14
+        let circle = parseFloat(prompt("enter circle :"));
+        let ans = (circle) => circle * circle * pi ;
+        document.write("<br><br>area of circle pi*r*r = : ", ans(circle));
+
+        let rectangle1 = parseFloat(prompt("enter rectangle1 height :"));
+        let rectangle2 = parseFloat(prompt("enter rectangle2 width :"));
+        let ans1 = (rectangle1, rectangle2) => rectangle1 * rectangle2;
+        document.write("<br><br>area of rectangle is l*w = : ", ans1(rectangle1, rectangle2));
+
+        let triangle1 = parseFloat(prompt("enter triangle height :"));
+        let triangle2 = parseFloat(prompt("enter triangle base :"));
+        let ans2 = (triangle1, triangle2) => .5 * triangle1 * triangle2;
+        document.write("<br><br>area of triangle 0.5*l*b = : ", ans2(triangle1, triangle2));
+
+    </script>
+</body>
+
+</html>
